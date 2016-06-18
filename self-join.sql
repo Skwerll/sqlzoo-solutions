@@ -35,7 +35,7 @@ Add a HAVING clause to restrict the output to these two routes
 SELECT company, num, COUNT(*) AS visits
 FROM route WHERE stop=149 OR stop=53
 GROUP BY company, num
-HAVING visits=2
+HAVING COUNT(*)=2
 
 --#5
 /*
